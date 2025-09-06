@@ -187,6 +187,7 @@ class WordProcessor:
 
             raise Exception("olefile not available")
 
-if __name__ == "main":
+if __name__ == "__main__":
     word_processor = WordProcessor()
     word_processor.process_docx(r'file_path')
+

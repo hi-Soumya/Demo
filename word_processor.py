@@ -184,4 +184,9 @@ class WordProcessor:
                         return content
             raise Exception("Not a valid OLE file")
         except ImportError:
+
             raise Exception("olefile not available")
+
+if __name__ == "main":
+    word_processor = WordProcessor()
+    word_processor.process_docx(r'file_path')
